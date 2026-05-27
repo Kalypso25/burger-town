@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Town</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- pink cow with speech bubble -->
+    <div class="cow-banner">
+        <div class="speech-bubble">Don't have a cow... just order one!</div>
+        <img src="COW.webp" alt="A pink cow in a field" class="cow-img">
+    </div>
+
+    <main>
+        <!-- the menu side -->
+        <section class="menu">
+            <h1>Burger Town Menu</h1>
+
+            <h2>Burger</h2>
+            <div class="row">
+                <span class="label">Type</span>
+                <label><input type="radio" name="burger-type" value="Regular"> Regular</label>
+                <label><input type="radio" name="burger-type" value="Cheese"> Cheese</label>
+            </div>
+            <div class="row">
+                <span class="label">Size</span>
+                <label><input type="radio" name="burger-size" value="Single"> Single</label>
+                <label><input type="radio" name="burger-size" value="Double"> Double</label>
+            </div>
+            <div class="row">
+                <span class="label">Toppings</span>
+                <label><input type="checkbox" name="topping" value="tomatoes"> Tomatoes</label>
+                <label><input type="checkbox" name="topping" value="lettuce"> Lettuce</label>
+                <label><input type="checkbox" name="topping" value="pickles"> Pickles</label>
+            </div>
+            <div class="row">
+                <span class="label"></span>
+                <label><input type="checkbox" name="topping" value="onions"> Onions</label>
+                <label><input type="checkbox" name="topping" value="mustard"> Mustard</label>
+                <label><input type="checkbox" name="topping" value="ketchup"> Ketchup</label>
+            </div>
+
+            <h2>Drink</h2>
+            <div class="row">
+                <span class="label">Type</span>
+                <label><input type="radio" name="drink-type" value="Water"> Water</label>
+                <label><input type="radio" name="drink-type" value="Tea"> Tea</label>
+                <label><input type="radio" name="drink-type" value="Soda"> Soda</label>
+            </div>
+            <div class="row">
+                <span class="label">Size</span>
+                <label><input type="radio" name="drink-size" value="Small"> Small</label>
+                <label><input type="radio" name="drink-size" value="Medium"> Medium</label>
+                <label><input type="radio" name="drink-size" value="Large"> Large</label>
+            </div>
+
+            <h2>Fries</h2>
+            <div class="row">
+                <span class="label">Type</span>
+                <label><input type="radio" name="fries-type" value="Regular"> Regular</label>
+                <label><input type="radio" name="fries-type" value="Curly"> Curly</label>
+            </div>
+            <div class="row">
+                <span class="label">Size</span>
+                <label><input type="radio" name="fries-size" value="Small"> Small</label>
+                <label><input type="radio" name="fries-size" value="Medium"> Medium</label>
+                <label><input type="radio" name="fries-size" value="Large"> Large</label>
+            </div>
+
+            <div class="buttons">
+                <button id="add-order">Add Order</button>
+                <button id="clear-order">Clear Order</button>
+            </div>
+        </section>
+
+        <!-- the order side -->
+        <section class="order">
+            <h1>Order</h1>
+            <div id="order-list"></div>
+            <p id="total"></p>
+        </section>
+    </main>
+
+    <!-- signature footer -->
+    <footer class="site-footer">
+        <p>&copy; <span id="year">2026</span> Kalypso Inc. &middot; Built with HTML, CSS &amp; JavaScript</p>
+        <p><a href="https://github.com/Kalypso25" target="_blank" rel="noopener">github.com/Kalypso25</a></p>
+    </footer>
+</body>
+
+</html>
